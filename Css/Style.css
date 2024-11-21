@@ -1,0 +1,113 @@
+body, ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    color: #000000;
+}
+#content {
+    padding-top: 100px;
+    text-align: center;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #033f80;
+    color: white;
+    padding: 10px 20px;
+    position: relative;
+}
+header .logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+.menu-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+.menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background: #0056b3;
+    text-align: center;
+}
+.menu li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+}
+.menu li a:hover {
+    background: #004080;
+}
+.menu-toggle {
+    display: none;
+}
+.menu-toggle:checked ~ .menu {
+    display: block;
+}
+#contato{
+    display: flex;
+    background-image: url(Design\ sem\ nome.png);
+    width: 100%;
+    height: 650px;
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column; 
+    gap: 10px; 
+    margin: 100px;
+}
+label {
+    font-weight: bold; 
+}
+input[type="text"],
+input[type="email"],
+textarea {
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+    font-size: 16px;
+}
+button {
+    background: #033f80;
+    color: rgb(255, 255, 255); 
+    padding: 10px;
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 16px;
+}
+#container {
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 20px; 
+    justify-content: center; 
+}
+.produto {
+    background-color: #f5f2f2;
+    border: 1px solid #b6b2b2;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+}
+.produto img {
+    width: 100%; 
+    height: auto;
+}
+.produto p {
+    font-size: 1em;
+    color: #666;
+}
+.produto .preco {
+    font-size: 1.5em;
+    color: #000000;
+}
